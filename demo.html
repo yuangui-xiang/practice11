@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<style>
+		ul li{
+			list-style:none;
+			width:200px;
+			height:20px;
+			border:1px solid #aaa;
+			margin-top:5px;
+			cursor:pointer;
+		}
+
+	</style>
+</head>
+<body>
+	<button id="btn">点击添加一个列表</button>
+	<ul>
+		<li>这是一个列表</li>
+	</ul>
+
+
+	<script>
+	$(window).ready(function(){
+		$("ul").click(function(){
+			alert("又添加了一个列表");
+		});
+		$("#btn").click(function(){
+			$("ul").append("<li>这是新添加的列表</li>");
+		});
+	});
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
